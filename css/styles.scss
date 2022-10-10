@@ -1,0 +1,309 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #1C1C1C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	margin: 2px 10px 2px 10px;
+	padding: 0;
+	list-style-position: inside;
+}
+
+li {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+a:hover{
+	color: #bb2d3b;
+}
+.header_logo{
+	background-color: #090909;
+}
+
+.navbar1{
+	background: #090909;
+	border-bottom: white solid 1px;
+}
+
+.nav_text2{
+	text-decoration: none;
+	color: white;
+	font-family: Poppins;
+	font-weight: bold;
+	border: white solid;
+	position: relative;
+	cursor: pointer;
+	transition: color 0.4s linear;
+}
+
+.nav_text1{
+	text-decoration: none;
+	color: white;
+	font-family: Poppins;
+	font-weight: bold;
+}
+.menu-btn{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+
+.menu-btn_burger{
+	width: 50px;
+	height: 6px;
+	background: #fff;
+	transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background: #fff;
+	transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+	transform: translateY(-16px);
+}
+.menu-btn_burger::after{
+	transform: translateY(16px);
+}
+.menu-btn.open .menu-btn_burger{
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before{
+	transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after{
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav{
+	transition: max-height .2s ease-in-out;
+	max-height: 0;
+	overflow: hidden;
+}
+.toggle{
+	cursor: pointer;
+}
+.nav.show{
+	transition: max-height .7s ease-in-out;
+	max-height: 100vh;
+}
+.video1{
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.vidbox{
+	height: 88.5vh;
+}
+
+.overskrift_stor{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 3.5rem;
+}
+
+.lille_tekst{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 1.5rem;
+}
+.Ydre_boks{
+	background-color: #2B2B2B;
+	border-radius: 40px;
+}
+.Ydre_boks2{
+	background-color: #1C1C1C;
+	border-radius: 40px;
+}
+.pic{
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+.pic{
+	filter: blur(0.2rem);
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+
+.pic:hover{
+	filter: blur(0);
+	transform: scale(1.1);
+}
+.sektion{
+	background-color: #212121;
+}
+.sektion2{
+	background-color: #1C1C1C;
+}
+.container_billede{
+	border-radius: 40px;
+}
+.knap{
+	text-decoration: none;
+	color: white;
+	font-family: Montserrat, SansSerif;
+	font-size: 1.1rem;
+}
+
+.knap::after{
+	content:'';
+	height: 2px;
+	width: 0%;
+	background-color: #bb2d3b;
+	display: block;
+	transition: .4s ease-in-out;
+}
+.knap:hover::after{
+	content: '';
+	height: 2px;
+	width: 20%;
+	background-color: #bb2d3b;
+	display: block;
+}
+
+.arrow {
+	display: flex;
+	justify-content: center;
+	color: white;
+	padding: 15px;
+}
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+.box-shadow{
+	box-shadow: black 0px 1px 30px;
+}
+
+
+.footer_tekst{
+	color: white;
+	text-decoration: none;
+	font-family: Poppins;
+	font-size: larger;
+	transition: all .3s ease-in-out;
+}
+
+.footer{
+	background-color: #171717;
+}
+
+.footer_tekst1{
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+.overskrift_stor1{
+	background-color: #2B2B2B;
+}
+
+.overskrift_stor2{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: white;
+}
+
+.overskrift_stor3{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: black;
+}
+
+.overskrift_stor4{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: black;
+}
+
+.overskrift_stor5{
+	background-color: #CBCBCB;
+}
+
+.skills{
+	font-family: Montserrat;
+	color: black;
+
+}
+
+.lille_tekst1{
+	max-width: 300px;
+	font-size: 1.1rem;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 700px){
+	.skills{
+		background-color: #CBCBCB;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.lille_tekst1{
+		font-size: 1rem;
+	}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+	.overskrift_stor2{
+		font-size: 2.2rem;
+	}
+}
+
+
