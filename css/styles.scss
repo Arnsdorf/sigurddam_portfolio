@@ -176,6 +176,13 @@ a:hover{
 .container_billede{
 	border-radius: 40px;
 }
+.container_billede2{
+	border-radius: 40px;
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+}
+
 .knap{
 	text-decoration: none;
 	color: white;
